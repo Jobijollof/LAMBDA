@@ -52,15 +52,17 @@ Click on `Create bucket`
 
 - Click on `Create a function`
 
-- Click on `Author from Scratch
+- Click on `Author from Scratch`
 
 # Under Basic information
 
 ```
-Function name = Your choice
-Runtime       = Node.js 12.x
-Permission    = Default
+Function name: Your choice
+Runtime:       Node.js 12.x
+Permission:     Default
+
 ```
+
 ![basic info](./images/basic-info.png)
 
 - Click on `Create function`
@@ -91,6 +93,7 @@ This means that the trigger will go off once there is an input or output from th
 
 #  Under ***Test event***
 
+
 ```
 Event name : name of your choice
 Template:     Hello-world
@@ -101,6 +104,7 @@ JSON statement format:
   
 }
 ```
+
 - Click on `Save`
 
 ![my lambda](./images/mylambda.png)
