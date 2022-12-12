@@ -37,12 +37,118 @@ Click on `Create bucket`
 
 - Upload file into bucket click on `upload`
 
-- Click on Permissions and drop bucket policy and `save`
+- Click on ***Permissions*** and drop bucket policy and `save`
 
-- Click on Properties and enable static website hosting
+- Click on ***Properties*** and `enable static website hosting`
 
 - Once these are done, it means the bucket has now been made public 
 
 # Step 2. Create a Lambda Function
+
+- In the AWS search bar type in Lambda
+
+![Lambda console](./images/lambda.png)
+
+- Click on `Create a function`
+
+- Click on `Author from Scratch
+
+# Under Basic information
+
+```
+Function name = Your choice
+Runtime       = Node.js 12.x
+Permission    = Default
+```
+![basic info](./images/basic-info.png)
+
+- Click on `Create function`
+
+The following message should pop up on your screen. 
+
+![sucessful](./images/function-created.png)
+# Add Trigger
+
+- Click  `Add trigger`
+
+# Under Trigger Configuratios
+
+- Select S3
+
+- Bucket: pick your S3 bucket name
+
+- Event Type : "All objects create events"
+This means that the trigger will go off once there is an input or output from the S3 bucket
+
+- Acknowledge  Recursive invocation 
+
+- Click `Add`
+
+![trigger](./images/trigger-success.png)
+
+- Click on `Test`
+
+#  Under ***Test event***
+
+```
+Event name : name of your choice
+Template:     Hello-world
+JSON statement format: 
+ {
+  "key1": "place your name here",
+  
+  
+}
+```
+- Click on `Save`
+
+![my lambda](./images/mylambda.png)
+
+# Modify a Lambda Function
+
+- Click on `Code` on the Fuction.
+
+- Replace the  default body of the  code with the following string in bracket
+
+```
+body: JSON.stringify('Hello ' + event.key1 + ' from Lambda!'),
+
+```
+![lambda](./images/codeJSON.png)
+
+- Click on `Deploy`
+
+![sucessful deploy](./images/sucessful-deploy.png)
+
+- Click on `Configuration`
+
+- Click on `Permissons`
+
+![config](./images/cofig-perm.png)
+
+- Edit `Executive role`
+
+```
+Description: your choice
+Time out: your choice (i am picking 10 mins)
+Execution role : Use an existing role
+```
+- Click on `Save`
+
+- Click on `Test`
+
+![exe](./images/lamda-execute.png)
+
+![final](./images/execution-result.png)
+
+
+
+
+
+
+
+
+
+
 
 
