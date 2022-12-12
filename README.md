@@ -1,6 +1,6 @@
 #  AWS-LAMBDA
 
-# Creating an S3 bucket, from the console that is triggered by a Lambda function. Lambda is triggered everytime an object is added to the S3 bucket.
+# Creating an S3 bucket, from the console that is triggered by a Lambda function. Lambda is triggered everytime there is an input or output to the S3 bucket.
 
 # Requirement:
 
@@ -140,6 +140,31 @@ Execution role : Use an existing role
 ![exe](./images/lamda-execute.png)
 
 ![final](./images/execution-result.png)
+
+# Add files to the S3 bucket.
+
+- Go to S3 and upload a file or folder
+
+- Go back to LAMBDA to check if it was triggered.
+
+- Click on your `Function` to view details
+
+- Click on `Monitor`
+
+![invocation](./images/innvocations.png)
+
+At the top right corner of innvocatiosn click the three dots
+
+- Click `View in metrics`
+
+- Cloud watch will load the innvocations
+![lamda-invoked](./images/Lambda-triggered.png)
+
+✨✨✨✨✨✨✨✨
+
+
+
+
 
 
 
