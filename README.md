@@ -1,6 +1,6 @@
 #  AWS-LAMBDA
 
-# Creating an S3 bucket, from the console that is triggered by a Lambda function. Lambda is triggered everytime there is an input or output to the S3 bucket.
+Creating an S3 bucket, from the console that is triggered by a Lambda function. Lambda is triggered everytime there is an input or output to the S3 bucket.
 
 # Requirement:
 
@@ -13,6 +13,7 @@
 ![Architecture](./images/architecture-lambda.png)
 
 # Step 1.
+
 - Log into you AWS account and search for S3
 - Click on `Create bucket`
 Under ***General Configuration*** do the following
