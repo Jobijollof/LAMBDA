@@ -35,4 +35,14 @@ Leave everyother option as default
 
 Click on `Create bucket`
 
+- Upload file into bucket click on `upload`
+
+- Click on Permissions and drop bucket policy and `save`
+
+- Click on Properties and enable static website hosting
+
+- Once these are done, it means the bucket has now been made public 
+
+# Step 2. Create a Lambda Function
+
 
